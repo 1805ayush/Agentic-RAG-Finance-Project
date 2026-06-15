@@ -1,0 +1,62 @@
+{
+  "factual": [
+    "When was the Federal Reserve founded?",
+    "What is the difference between a stock and a bond?",
+    "How does compound interest work?",
+    "What does IPO stand for?",
+    "What is the role of the SEC?",
+    "Explain what a 401(k) is",
+    "What is a mutual fund?",
+    "How are dividends taxed?",
+    "What is the gold standard?",
+    "What does EBITDA mean?"
+  ],
+  "market_data": [
+    "AAPL P/E ratio analyst view",
+    "TSLA revenue growth last quarter",
+    "NVDA earnings per share trend",
+    "MSFT dividend yield",
+    "S&P 500 historical returns",
+    "Goldman Sachs Q4 earnings",
+    "Berkshire Hathaway book value",
+    "JPMorgan net interest margin",
+    "Amazon free cash flow",
+    "Meta advertising revenue"
+  ],
+  "opinion": [
+    "What causes stock market bubbles?",
+    "Explain quantitative easing",
+    "Why do bond prices fall when rates rise?",
+    "What is the efficient market hypothesis?",
+    "How does inflation affect investment returns?",
+    "Why is diversification important?",
+    "What are the risks of leverage?",
+    "How do central banks control money supply?",
+    "What is moral hazard in finance?",
+    "Why do recessions happen?"
+  ],
+  "sentiment": [
+    "Is this positive news? Company reports record quarterly revenue beating estimates",
+    "Is this concerning? Firm announces massive layoffs amid declining sales",
+    "How should investors view this? Strong guidance for next fiscal year",
+    "Bad news? Regulatory probe announced into accounting practices",
+    "Good outlook? New product launch exceeds all sales projections",
+    "Worrying? Credit rating downgraded by major rating agency",
+    "Positive? Major contract win announced with government agency",
+    "Negative? CEO departure announced unexpectedly",
+    "Bullish? Profit margins expanded for fifth consecutive quarter",
+    "Bearish? Inventory writedowns reported in latest earnings"
+  ],
+  "aggregation": [
+    "How many positive sentiment passages are in the corpus?",
+    "Count the negative sentiment financial statements",
+    "What is the breakdown of query types in our corpus?",
+    "How many factual passages exist in the database?",
+    "Show me the distribution of passages by source",
+    "Total number of passages with neutral sentiment",
+    "How many entries are marked positive?",
+    "Count of opinion-type records",
+    "Number of market_data passages",
+    "Total corpus size by category"
+  ]
+}
