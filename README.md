@@ -51,24 +51,24 @@ Evaluated on a hand-curated **50-query test set** across 5 query categories usin
 flowchart TD
     Q([🔍 User Query]):::query --> Agent
 
-    Agent[<b>🧠 LangGraph ReAct Agent</b><br/><i>Groq Llama 3.3 70B</i>]:::agent
+    Agent["🧠 LangGraph ReAct Agent<br/><i>Groq Llama 3.3 70B</i>"]:::agent
 
     Agent -- "conceptual<br/>questions" --> Sem
     Agent -- "tickers<br/>acronyms" --> BM
     Agent -- "counts<br/>aggregations" --> SQL
     Agent -- "live / recent<br/>data" --> Web
 
-    Sem[<b>🔮 Semantic Search</b><br/><sub>ChromaDB + MiniLM-L6-v2</sub>]:::tool
-    BM[<b>🔑 BM25 Keyword</b><br/><sub>rank_bm25 + finance tokenizer</sub>]:::tool
-    SQL[<b>🗄 SQL Lookup</b><br/><sub>SQLite + corpus_stats</sub>]:::tool
-    Web[<b>🌐 Web Search</b><br/><sub>DuckDuckGo (ddgs)</sub>]:::tool
+    Sem["🔮 Semantic Search<br/><sub>ChromaDB + MiniLM-L6-v2</sub>"]:::tool
+    BM["🔑 BM25 Keyword<br/><sub>rank_bm25 + finance tokenizer</sub>"]:::tool
+    SQL["🗄 SQL Lookup<br/><sub>SQLite + corpus_stats</sub>"]:::tool
+    Web["🌐 Web Search<br/><sub>DuckDuckGo via ddgs</sub>"]:::tool
 
     Sem --> Loop
     BM --> Loop
     SQL --> Loop
     Web --> Loop
 
-    Loop{Enough<br/>context?}:::decision
+    Loop{"Enough<br/>context?"}:::decision
     Loop -- "no" --> Agent
     Loop -- "yes" --> Answer([💬 Grounded Answer<br/>+ Source Citations]):::answer
 
